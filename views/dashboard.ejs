@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+
+    <section class="kpis">
+        <div class="card">
+            <p>Total users</p>
+            <strong>
+                <%= stats.totals.totalUsers %>
+            </strong>
+        </div>
+
+        <div class="card">
+            <p>Total posts</p>
+            <strong>
+                <%= stats.totals.totalPosts %>
+            </strong>
+        </div>
+
+        <div class="card">
+            <p>Total comments</p>
+            <strong>
+                <%= stats.totals.totalComments %>
+            </strong>
+        </div>
+    </section>
+
+    <section class="charts">
+        <div class="card">
+            <h2>Posts por usuario</h2>
+            <canvas id="postsByUserChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>Top posts por comentarios</h2>
+            <canvas id="topPostsByCommentsChart"></canvas>
+        </div>
+    </section>
+
+    <div id="stats-root" data-stats='<%- JSON.stringify(stats) %>'></div>
+    <script src="/public/vendor/chart.umd.min.js"></script>
+    <script src="/public/js/dashboard.js"></script>
+
+    </main>
+    </body>
+
+    </html>
