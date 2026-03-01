@@ -1,0 +1,10 @@
+body { font-family: system-ui, Arial; margin: 0; }
+.header { padding: 16px; border-bottom: 1px solid #ddd; display:flex; gap:24px; align-items:center; }
+.header nav a { margin-right: 12px; }
+.container { padding: 16px; }
+
+.kpis { display:grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 16px; }
+.charts { display:grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.card { border: 1px solid #ddd; padding: 12px; border-radius: 10px; }
+.card h2 { margin: 0 0 10px 0; font-size: 16px; }
